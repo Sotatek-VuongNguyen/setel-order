@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+    setel_order:
+        container_name: setel_order
+        build: .
+        command: npm run start
+        ports:
+          - "8000:8000"
+networks:
+    nesjs-network:
